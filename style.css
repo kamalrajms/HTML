@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: red;
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.para {
+  font-size: 40px;
+  color: aqua;
+}
+#para-id {
+  color: yellow;
+}
+/* body  div {
+  color: violet;
+  font-size: x-large;
+} */
+body > div > nav {
+  color: red;
+}
