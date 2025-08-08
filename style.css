@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 p {
   font-family: "Times New Roman", Times, serif;
@@ -18,7 +19,10 @@ p {
   background-color: black;
 }
 body {
+  width: 100vw;
+  height: 100vh;
 }
+
 .title {
   color: aqua;
 }
@@ -59,4 +63,73 @@ body > .container > h2 {
   background-position: center;
   background-size: cover;
   /* filter: blur(10px);  */
+}
+
+/* position */
+
+.container-size {
+  width: 500px;
+  height: 600px;
+  position: static;
+  background-color: yellow;
+}
+.container-size1 {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  background-color: rgb(0, 255, 119);
+  top: 100px;
+  left: 100px;
+}
+.container-size2 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+}
+.container-size3 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  position: sticky;
+  top: 300;
+}
+.container-size4 {
+  position: absolute;
+  top: 50px;
+}
+.card-container {
+  width: 100%;
+  position: relative;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 100px;
+  height: 200px;
+  background-color: pink;
+  border: 2px solid black;
+  position: absolute;
+}
+.card1 {
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.card2 {
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.card3 {
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+.card4 {
+  top: 40px;
+  left: 40px;
+  z-index: 4;
 }
