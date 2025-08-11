@@ -7,13 +7,63 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #000;
 }
-
+/* header */
 header {
   width: 100%;
   height: 10vh;
-  background-color: skyblue;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.site-logo,
+.home-logo,
+.search-logo,
+.bell-logo,
+.profile-logo {
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+.home-logo {
+  width: 50px;
+  height: 50px;
+  fill: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: #1f1f1f;
+}
+.headContainer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 50px;
+  padding: 10px;
+  gap: 10px;
+}
+.search-container > input {
+  background: transparent;
+  outline: none;
+  border: 0px;
+  color: white;
+  border-right: 1px solid #fff;
+}
+.headContainer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .body {
   width: 100%;
   height: 80vh;
@@ -22,13 +72,17 @@ header {
   justify-content: space-between;
 }
 .dashboard {
-  width: 29%;
+  width: 29.5%;
   height: 100%;
   background-color: red;
+  overflow: scroll;
+}
+.dashboard::-webkit-scrollbar {
+  display: none;
 }
 .sub-body {
   padding: 25px;
-  width: 69%;
+  width: 69.5%;
   height: 100%;
   background-color: blueviolet;
   display: flex;
