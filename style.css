@@ -8,68 +8,37 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
-/* .box {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  background-color: yellow;
-  border: 2px solid black;
-  transition-property: background-color;
-  transition-delay: 1s;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in;
-  position: relative;
-  top: 25%;
-  left: 45%;
-}
-.box:hover {
-  background-color: red;
-  padding: 50px;
-} */
-
 .box {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  background-color: yellow;
-  position: relative;
-  top: 25%;
-  left: 45%;
-  animation-name: name;
-  animation-duration: 3s;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  border: 2px solid black;
+  width: 80%;
+  height: 80%;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.sub {
+  width: 20px;
+  height: 20px;
+  background-color: yellowgreen;
 }
 
-@keyframes mov {
-  0% {
-    transform: rotate(0deg);
-    left: 0;
-    top: 0;
-  }
-  50% {
-    /* left: 22.5%; */
-  }
-  100% {
-    left: 100%;
-    transform: rotate(360deg);
-    top: 100%;
-  }
+.sub:first-child {
+  background: red;
 }
-@keyframes name {
-  0% {
-    transform: translateX(0);
-    height: 400px;
-    width: 100px;
-    padding: 50px;
+.sub:last-child {
+  background-color: yellow;
+}
+.sub:nth-child(5) {
+  background-color: orange;
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  .box {
+    background: white;
   }
-  50% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateX(0);
+  body {
+    background: #000;
   }
 }
