@@ -1,0 +1,31 @@
+console.log()  to pront
+
+//  --single line comment
+
+/*   */ --- multi line comment
+
+## variables
+
+    var  --it can be re-declear and update values
+    let  --it can't be re-declear but can be update values
+    const -- can't be re-declear and update
+
+## Data types
+
+    primitive data types
+        String,number-[integer,float],boolean,null,undefinned
+    referance data types
+        Object,Array,Functions
+
+## operators
+
+    Arithematic
+    Assignement
+    Comparison=[
+        Relational
+        equality
+        string comparison
+    ]
+    ternary 
+    logical 
+    bitwise
