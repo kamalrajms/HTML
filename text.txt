@@ -26,6 +26,6 @@ console.log()  to pront
         equality
         string comparison
     ]
-    ternary 
+    ternary = (condition)? trueblock :False block;
     logical 
     bitwise

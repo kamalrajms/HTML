@@ -1,36 +1,59 @@
-// console.log("hi");
+//arithematic
+let a = 5;
+let b = 2;
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a % b);
+// console.log(a ** b);
 
-/* rhgig
-4h35h
-35history53h */
+//assignement
 
-var a = 55;
-console.log(a);
-var a = 44;
-a = 554;
-console.log(a);
+let ass1 = 8;
+// ass1 = ass1 + 2;
+// console.log(ass1);
+// ass1 += 2;
+// console.log(ass1);
+// ass1 -= 2;
+// console.log(ass1);
+// ass1 *= 2;
+// console.log(ass1);
+// ass1 /= 2;
+// console.log(ass1);
 
-let b = 77;
-console.log(b);
-b = 99;
-console.log(b);
+//relational
 
-const c = 10;
-console.log(c);
-console.log(typeof c);
+let x = 5;
 
-let name = "kamal";
-console.log(name);
-console.log(typeof name);
+// console.log(x > 5);
+// console.log(x > 8);
+// console.log(x < 5);
+// console.log(x < 2);
+// console.log(x < 8);
+// console.log(x > 2);
+// console.log(x >= 6);
+// console.log(x >= 5);
+// console.log(x <= 7);
+// console.log(x <= 4);
 
-let d = true;
-console.log(d);
-console.log(typeof d);
+//equality operator
 
-let e = [];
-console.log(e);
-console.log(typeof e);
+let z = 5;
 
-let f;
-console.log(f);
-console.log(typeof f);
+// console.log(z == 5);
+// console.log(z == 4);
+// console.log(z == "5");
+// console.log(z == "4");
+
+// console.log(z === 5);
+// console.log(z === 4);
+// console.log(z === "5");
+// console.log(z === "6");
+
+//ternary operator
+
+//(condition)? trueblock :False block;
+let age = 18;
+let test = age <= 18 ? "eligible for drive" : "not eligible for drive";
+console.log(test);
