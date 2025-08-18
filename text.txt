@@ -27,5 +27,72 @@ console.log()  to pront
         string comparison
     ]
     ternary = (condition)? trueblock :False block;
-    logical 
-    bitwise
+    logical =   AND &&    OR ||     NOT !
+
+        AND= t,t=t
+            t,f=f
+            f,t=f
+            f,f=f
+        or =t,t=t
+            t,f=t 
+            f,t=t 
+            f,f=f 
+        NOT 
+            t=f
+            f=t
+
+    
+
+
+##falesy values
+        null,undefined,Nan,0,false
+##truthy values
+        except falsy values
+##bitwise
+        to find binary values
+
+            values=128   64    32  16    8    4    2   1
+
+            1      = 0   0      0   0     0     0   0   1
+            2       =0    0     0   0       0   0   1   0
+            |       =                       0     0    1    1
+                                    ans=3
+                &   =                       0   0   0   0
+                                        ans=0   
+
+## conditional statememts
+    if(condition){
+        //code
+    }
+
+    if(condition){
+        //code
+    }
+    else if (condition){
+
+    }else{
+
+    }
+
+
+    if(condition){
+        //code
+    }
+    else{
+
+    }
+
+
+    nested if
+
+    if(){
+        if(){
+            if(){
+
+            }
+        }else{
+
+        }
+    }else{
+
+    }
