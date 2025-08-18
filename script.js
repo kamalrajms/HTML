@@ -1,80 +1,33 @@
-//arithematic
-let a = 5;
-let b = 2;
-// console.log(a + b);
-// console.log(a - b);
-// console.log(a * b);
-// console.log(a / b);
-// console.log(a % b);
-// console.log(a ** b);
+for (let i = 1; i < 5; i++) {
+  console.log(i);
+}
 
-//assignement
+let a = 1;
+while (a <= 0) {
+  console.log(a);
+  a++;
+}
 
-let ass1 = 8;
-// ass1 = ass1 + 2;
-// console.log(ass1);
-// ass1 += 2;
-// console.log(ass1);
-// ass1 -= 2;
-// console.log(ass1);
-// ass1 *= 2;
-// console.log(ass1);
-// ass1 /= 2;
-// console.log(ass1);
+let c = 0;
+do {
+  console.log(c);
+  c++;
+} while (c >= 5);
 
-//relational
+// for (let i = 1; i < 5; i++) {
+//   for (let e = i; e <= i; e++) {
+//     console.log(e);
+//   }
+// }
 
-let x = 5;
+// let x = 0;
+// while (x <= 5) {
+//   while (x <= 2) {
+//     console.log(x * x);
+//   }
+//   console.log(x);
 
-// console.log(x > 5);
-// console.log(x > 8);
-// console.log(x < 5);
-// console.log(x < 2);
-// console.log(x < 8);
-// console.log(x > 2);
-// console.log(x >= 6);
-// console.log(x >= 5);
-// console.log(x <= 7);
-// console.log(x <= 4);
+//   x++;
+// }
 
-//equality operator
 
-let z = 5;
-
-// console.log(z == 5);
-// console.log(z == 4);
-// console.log(z == "5");
-// console.log(z == "4");
-
-// console.log(z === 5);
-// console.log(z === 4);
-// console.log(z === "5");
-// console.log(z === "6");
-
-//ternary operator
-
-//(condition)? trueblock :False block;
-let age = 18;
-let test = age <= 18 ? "eligible for drive" : "not eligible for drive";
-console.log(test);
-
-//logical operator
-
-let num = 6;
-let num2 = 4;
-console.log(num > 6 || num == 6);
-console.log(num > 6 && num == 6);
-console.log(num2 >= num || num >= 6);
-console.log(num2 >= 8 || num2 <= 6);
-console.log(num <= num2 && num >= 6);
-console.log(num2 >= num || num2 <= 4);
-
-console.log(num2 >= num && null);
-console.log(num2 >= num && NaN);
-console.log(num2 >= num && undefined);
-console.log(num2 >= num && false);
-console.log(num2 >= num && 0);
-
-console.log(1 & 2);
-console.log(1 | 2);
-console.log(9 | 5);

@@ -1,3 +1,5 @@
+13/8/2025
+
 console.log()  to pront
 
 //  --single line comment
@@ -17,6 +19,7 @@ console.log()  to pront
     referance data types
         Object,Array,Functions
 
+14/8/2025
 ## operators
 
     Arithematic
@@ -27,6 +30,9 @@ console.log()  to pront
         string comparison
     ]
     ternary = (condition)? trueblock :False block;
+
+18/8/2025
+
     logical =   AND &&    OR ||     NOT !
 
         AND= t,t=t
@@ -96,3 +102,27 @@ console.log()  to pront
     }else{
 
     }
+
+## looping statements
+
+    while loop
+
+    while(){
+
+    }
+
+    for loop
+
+    for(start, end ,increment)
+
+    do while loop
+
+    do{
+
+    }while( )
+
+
+    nested for
+    nested while
+
+
