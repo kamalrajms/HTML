@@ -154,3 +154,13 @@ console.log()  to pront
         const variableName=()=> {//code}
 
 
+## Array []
+
+    used to store any type of values
+
+    Array decleration
+
+    Array decleration
+
+    Array methods
+       pop,push,shift,unshift,slice,splice,indexof,reverse,sort

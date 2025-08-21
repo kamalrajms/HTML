@@ -1,48 +1,47 @@
-function greeting() {
-  console.log("Hello");
-}
-greeting();
-greeting();
-greeting();
-greeting();
-greeting();
-greeting();
-greeting();
-greeting();
+let fruits = ["apple", "banana", "mangeo"];
+console.log(fruits);
+console.log(fruits[0]);
 
-//parameter ,arguments
+// Array decleration
+let A = new Array("A", "B", "c");
+console.log(A);
 
-function person(name) {
-  console.log("hi" + name);
-}
-person("SK");
-person("AK");
+//array indexing
 
-//return value
+console.log(A[1]);
+console.log(A.length - 1);
 
-function numbers(a, b) {
-  return a + b;
-}
+// Array methods
 
-let ans = numbers(3, 4);
-let ans1 = numbers(3, 5);
-let ans2 = numbers(3, 8);
-console.log(ans);
-console.log(ans1);
-console.log(ans2);
+let color = ["black", "white", "red", "blue", "green"];
 
-// function Expression
+let pop = color.pop();
+console.log(pop);
+console.log(color);
+let push = color.push("pink");
+console.log(push);
+console.log(color);
+let shift = color.shift();
+console.log(shift);
+console.log(color);
+let unshift = color.unshift("violet");
+console.log(unshift);
+console.log(color);
+let slice = color.slice(1, 3);
+console.log(slice);
+console.log(color);
+let splice = color.splice(1, 3, "yellow", "skyblue");
+console.log(splice);
+console.log(color);
+console.log(color.indexOf("blue"));
+console.log(color.includes("red"));
+console.log(color.reverse());
+console.log(color.sort());
 
-const multiply = function (a, b) {
-  return a * b;
-};
-console.log(multiply(4, 5));
+// for (let i = 0; i < color.length; i++) {
+//   console.log(color[i]);
+// }
 
-//arrow function
-
-const add = (a, b) => {
-  return a * b;
-};
-
-console.log(add(1, 1));
-
+// for (i of color) {
+//   console.log(i);
+// }
