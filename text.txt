@@ -121,8 +121,13 @@ console.log()  to pront
 
     }while( )
 
+19/8/2025
 
     nested for
     nested while
+
+## increment decrement I++,++i,--i,i--
+
+## break,continue
 
 
