@@ -129,5 +129,28 @@ console.log()  to pront
 ## increment decrement I++,++i,--i,i--
 
 ## break,continue
+ 
+21/08/2025
+
+## Function
+
+    to perform a specific task
+    reduct re-use of code
+
+    function declaration
+
+        function name(){
+            //code
+        }
+
+    function Expression
+
+        const variableName=function(){
+            //code
+        }
+
+    arrow function 
+
+        const variableName=()=> {//code}
 
 
