@@ -1,21 +1,43 @@
-let num = [2, 4, 5, 6, 71,2];
-let res = num.map((n, ind) => n * n);
-console.log(res);
+let person = {
+  name: "Arun",
+  age: 23,
+  course: "B.E",
+  address: "a colony",
+  marks: {
+    tamil: 88,
+    englis: 90,
+  },
+  greeting: function (name) {
+    console.log("hello", this.name);
+  },
+};
+//update
+person.course = "M.E";
 
-let red = num.reduce((acc, current) => current + acc, 0);
-console.log(red);
+console.log(person);
+//delete
+delete person.address;
 
-let find = num.find((n) => n % 2 == 0);
-console.log(find);
+console.log(person.age);
+console.log(person["course"]);
+console.log(person);
+console.log(person.marks["tamil"]);
+console.log(person.marks.tamil);
+console.log(person.greeting("AK"));
 
-let filter = num.filter((e) => e % 2 === 0);
-console.log(filter);
+for (let i in person) {
+  console.log(i, ":", person[i]);
+}
 
-let findindex = num.findIndex((e) => e >= 10);
-console.log(findindex);
+let num = ["arun", 2, "hgf", 3, 4, 5];
+for (let i in num) {
+  console.log(i, num[i]);
+}
 
-let some = num.some((e) => e < 0);
-console.log(some);
+for (let i of num) {
+  console.log(i);
+}
 
-let every = num.every((e) => e % 2 === 0);
-console.log(every);
+num.forEach((n, ind) => {
+  console.log(n, ind);
+});

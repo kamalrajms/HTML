@@ -175,6 +175,8 @@ console.log()  to pront
     Array methods
        pop,push,shift,unshift,slice,splice,indexof,reverse,sort
 
+22/08/2025
+
     array manipulating methods
 
         map()
@@ -211,3 +213,20 @@ console.log()  to pront
         every()
 
             it return true if all the element in an array passes the condition
+
+## Object {}
+
+    it is a collection data in key:value sets.
+    it can store any type of data in keys and value formate in object
+
+##for in
+
+    loop over the keys /index of an object
+    best for object
+
+## for of
+    it has no index
+    best for Array
+
+## forEach
+    breack & continue does't work
