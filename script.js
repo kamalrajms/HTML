@@ -1,43 +1,35 @@
-let person = {
-  name: "Arun",
-  age: 23,
-  course: "B.E",
-  address: "a colony",
-  marks: {
-    tamil: 88,
-    englis: 90,
-  },
-  greeting: function (name) {
-    console.log("hello", this.name);
-  },
-};
-//update
-person.course = "M.E";
+// console.log(document.title);
 
-console.log(person);
-//delete
-delete person.address;
+// id
 
-console.log(person.age);
-console.log(person["course"]);
-console.log(person);
-console.log(person.marks["tamil"]);
-console.log(person.marks.tamil);
-console.log(person.greeting("AK"));
+let head = document.getElementById("head");
 
-for (let i in person) {
-  console.log(i, ":", person[i]);
+head.style.color = "red";
+
+//class
+
+// let para = document.getElementsByClassName("para")[0];
+let para = document.getElementsByClassName("para");
+for (let p of para) {
+  p.style.color = "yellow";
 }
 
-let num = ["arun", 2, "hgf", 3, 4, 5];
-for (let i in num) {
-  console.log(i, num[i]);
-}
+//tag selector
 
-for (let i of num) {
-  console.log(i);
-}
+let nav = document.getElementsByTagName("nav");
+// nav.style.fontWeight = "bold";
+console.log(nav.length);
 
-num.forEach((n, ind) => {
-  console.log(n, ind);
+//query selector
+
+let query = document.querySelector("#head");
+
+query.style.backgroundColor = "yellow";
+
+//qurey selector all
+
+let queryall = document.querySelectorAll("#head");
+queryall.forEach((e) => {
+  e.style.backgroundColor = "yellow";
 });
+ 

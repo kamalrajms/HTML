@@ -230,3 +230,51 @@ console.log()  to pront
 
 ## forEach
     breack & continue does't work
+
+## time intervals
+
+    setTimeout()   execute only once
+
+        setTimeout(callback,Delay)
+
+    setIntervales()
+
+        setIntervales(callback,Delay)
+
+##  syn  asyn
+
+
+## DOM - Document object module
+    
+    use DOM 
+        create ,delete, update, delete..
+
+    
+    DOM tree structure
+
+        Document
+                html
+                    head
+                        title--"content"
+                    body
+                        p--"content"
+                        h1--"content"
+
+    types of node
+
+        element node --<p>
+        text node-- "content"
+        comment node-- <!--  -->
+        attribute node--  <img src="" placholder="">
+
+    Accessing DOM in browser
+        // console.log(document.title);
+
+    types of selectors
+
+        id selector
+        class selector    
+        Element selector
+        query selector
+        query selector all
+            
