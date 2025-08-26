@@ -1,38 +1,66 @@
-// innerHTML
 let text = document.getElementById("text");
-console.log(text.innerHTML);
+text.style.color = "red";
+text.style.backgroundColor = "yellow";
 
-text.innerHTML = "<i>Hello</i>";
+let area = document.getElementById("textarea");
+area.value = "kfugvu 4v hi";
 
-//inner text
+//create element
+let newele = document.createElement("div");
+newele.textContent = "hello world";
+document.getElementById("newelement").appendChild(newele);
 
-let text2 = document.getElementById("text2");
-console.log(text2.innerText);
+//creating text node
+let li = document.createElement("li");
+let textli = document.createTextNode("Item A");
+li.appendChild(textli);
+document.getElementById("item").appendChild(li);
 
-text2.innerText = "changed text";
+//append child
+let div = document.createElement("div");
+div.textContent = "java script";
+document.getElementById("addchild").appendChild(div);
 
-//text content
+//append()
+let append = document.getElementById("append");
+append.append("hi", "hello", "bye");
+append.append(document.createElement("hr"));
 
-let text3 = document.getElementById("text3");
-console.log(text3.textContent);
+//prepend()
+let pre = document.getElementById("pre");
+let h2 = document.createElement("h2");
+h2.textContent = "how are you";
+pre.prepend(h2);
 
-text3.textContent = "hiiiii....";
+//insertBefore
+let item = document.createElement("li");
+item.textContent = "before item B";
+let list = document.getElementById("list");
+let ref = document.getElementById("ref");
+list.insertBefore(item, ref);
 
-//getAttribute
+//  insertAdjacentHtml()
+const box = document.getElementById("box");
 
-let img = document.getElementById("img");
-console.log(img.getAttribute("src"));
+box.insertAdjacentHTML("beforebegin", "<h2>Before Begin</h2>");
+box.insertAdjacentHTML("afterbegin", "<h3>Start</h3>");
+box.insertAdjacentHTML("beforeend", "<h3>stop</h3>");
+box.insertAdjacentHTML("afterend", "<h2>after end</h2>");
 
-//setAttribute
+//  remove child()
 
-img.setAttribute("src", "./image/MS-Dhoni-Background-images-740x392.jpg");
-img.setAttribute("alt", "Dhoni");
+let child = document.getElementById("child2");
 
-//remove attribute
+document.getElementById("parent").removeChild(child);
 
-let inp = document.getElementById("inp");
+//remove()
+document.getElementById("parent").remove();
 
-inp.removeAttribute("placeholder");
+//replace element
 
-//changing form
-inp.value = "kamal";
+let replace = document.getElementById("replace");
+let old = document.getElementById("old");
+
+let new1 = document.createElement("div");
+new1.textContent = "new content";
+replace.replaceChild(new1, old);

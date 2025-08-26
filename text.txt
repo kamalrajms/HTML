@@ -289,3 +289,44 @@ console.log()  to pront
 
 ## changing form 
         input,textcontent,select twgs
+
+26/08/2025
+
+## creating and adding elements
+
+    creating element
+        we can create an empty element
+        it doesn't appear untill it append
+
+    create text node
+        create a text node (only the text not elements)
+## Append elements
+    append child()
+        add the node at the end of the  parent element
+        can only append only one node at a time
+    append()
+        add one or more node elements at a time
+        can add multiple items at once
+        can uppend both node & string
+    prepend()
+        add element or text at the begining of the parent node
+    insertBefore()
+        variableName.insertBefore(new item, element before);
+    insertAdjacentHtml()
+        variableName.insertAdjacentHtml(position,text)
+
+            beforeBegin--before the element itself
+            after begin--insert before the first element
+            before end--insert after the last element
+            after end--after the element itself
+## removing and replaceing elements
+
+    remove child()
+        it removes the child node from its parent
+        you need both parent node & child node to remove it
+
+    remove()
+        directly remove the element itself
+    replaceing element()
+        it removes the old element and add new element
+            variableName.replcechild(old,new)
