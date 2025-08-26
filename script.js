@@ -1,35 +1,38 @@
-// console.log(document.title);
+// innerHTML
+let text = document.getElementById("text");
+console.log(text.innerHTML);
 
-// id
+text.innerHTML = "<i>Hello</i>";
 
-let head = document.getElementById("head");
+//inner text
 
-head.style.color = "red";
+let text2 = document.getElementById("text2");
+console.log(text2.innerText);
 
-//class
+text2.innerText = "changed text";
 
-// let para = document.getElementsByClassName("para")[0];
-let para = document.getElementsByClassName("para");
-for (let p of para) {
-  p.style.color = "yellow";
-}
+//text content
 
-//tag selector
+let text3 = document.getElementById("text3");
+console.log(text3.textContent);
 
-let nav = document.getElementsByTagName("nav");
-// nav.style.fontWeight = "bold";
-console.log(nav.length);
+text3.textContent = "hiiiii....";
 
-//query selector
+//getAttribute
 
-let query = document.querySelector("#head");
+let img = document.getElementById("img");
+console.log(img.getAttribute("src"));
 
-query.style.backgroundColor = "yellow";
+//setAttribute
 
-//qurey selector all
+img.setAttribute("src", "./image/MS-Dhoni-Background-images-740x392.jpg");
+img.setAttribute("alt", "Dhoni");
 
-let queryall = document.querySelectorAll("#head");
-queryall.forEach((e) => {
-  e.style.backgroundColor = "yellow";
-});
- 
+//remove attribute
+
+let inp = document.getElementById("inp");
+
+inp.removeAttribute("placeholder");
+
+//changing form
+inp.value = "kamal";

@@ -243,6 +243,7 @@ console.log()  to pront
 
 ##  syn  asyn
 
+25/08/2025
 
 ## DOM - Document object module
     
@@ -277,4 +278,14 @@ console.log()  to pront
         Element selector
         query selector
         query selector all
-            
+
+## reading & changing content
+
+    innerHTML,innertext,textcontent
+
+##  Reading element attrubute
+
+    getAttribute,setAttrubute,removeAttribute
+
+## changing form 
+        input,textcontent,select twgs
