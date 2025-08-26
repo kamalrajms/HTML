@@ -4,35 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      .highlight {
+        color: red;
+      }
+      .bold {
+        font-size: x-large;
+      }
+      .new {
+        padding: 40px;
+        border: 2px solid orange;
+      }
+      .head {
+        color: blue;
+      }
+      .bg {
+        background-color: palevioletred;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="text">hello</h1>
+    <p id="text" class="highlight bold">Hello</p>
 
-    <textarea name="" id="textarea"></textarea>
-    <div id="newelement"></div>
-
-    <ul id="item"></ul>
-
-    <div id="addchild"></div>
-    <div id="append"></div>
-    <div id="pre"><h2>ok</h2></div>
-    <ul id="list">
-      <li>item A</li>
-      <li id="ref">item b</li>
-    </ul>
-    <div id="box" style="padding: 40px; background-color: red">
-      <p>Para</p>
-    </div>
-
-    <div id="parent">
-      <p id="child1">1</p>
-      <p id="child2">2</p>
-      <h1>kjgkgjh</h1>
-    </div>
-
-    <div id="replace">
-      <div id="old">old para</div>
-    </div>
+    <h1 id="text2" class="head">Hello</h1>
+    <h3 id="h3">text content</h3>
     <script src="./script.js"></script>
   </body>
 </html>

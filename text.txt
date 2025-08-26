@@ -330,3 +330,15 @@ console.log()  to pront
     replaceing element()
         it removes the old element and add new element
             variableName.replcechild(old,new)
+
+## className & classList styleing in js
+    className
+        can able to aremove all classes of the element
+        and assigne one element.
+
+    classList
+        
+        can able to add, remove, toggle the class name
+
+single line styleing in css 
+       variableName.style.cssText=" //code"
