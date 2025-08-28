@@ -342,3 +342,45 @@ console.log()  to pront
 
 single line styleing in css 
        variableName.style.cssText=" //code"
+
+28/08/2025
+
+##DOM traversal
+
+    parent node--go up
+    child node--go down
+    siblings--go sideways
+
+    parent node 
+        return any type of node that is the parent of 
+        the current node.
+        that parent could be:
+            an element 
+            an document(#document)
+    parent Element
+        return only the parent if it is an element node
+        if the parent is not an element ,it return null
+
+    child node
+        child node  
+            return a node of all child node
+        children
+            return an html collection of only element node
+        
+    first child ,first elements child
+        firstchild
+            return first children node(texxt,comment or element)
+        first element child
+            only first element
+
+    same and opp for lastchild and last element child
+    
+    sibling node
+        nextsibling , nextelement sibling
+            nextsibling-- the next sibling node (like text, comment)
+        nextelement sibling
+            only the next element sibling
+
+##event handlers
+
+    ## inline event handlers

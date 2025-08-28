@@ -1,13 +1,29 @@
-let para = document.getElementById("text");
-console.log(para.className);
-para.className = "new";
-console.log(para.className);
+// parent node
+const child = document.getElementById("child");
+console.log(child.parentNode);
+console.log(child.parentElement);
+console.log(document.parentElement);
 
-let head = document.getElementById("text2");
-head.classList.add("bg");
-head.classList.remove("head");
-head.classList.toggle("underline");
-console.log(head.classList.contains("underline"));
+//child node
+const list = document.getElementById("list");
+console.log(list.childNodes);
+console.log(list.children);
 
-let h3 = document.getElementById("h3");
-h3.style.cssText = "padding:20px; color:yellow;";
+//first child
+const book = document.getElementById("book");
+console.log(book.firstChild);
+console.log(book.firstElementChild);
+
+//last child
+console.log(book.lastChild);
+console.log(book.lastElementChild);
+
+//sibling node
+//next
+const first = document.getElementById("first");
+const last = document.getElementById("last");
+console.log(first.nextSibling);
+console.log(first.nextElementSibling);
+//previous
+console.log(last.previousSibling);
+console.log(last.previousElementSibling);

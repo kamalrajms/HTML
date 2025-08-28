@@ -4,33 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
-    <style>
-      .highlight {
-        color: red;
-      }
-      .bold {
-        font-size: x-large;
-      }
-      .new {
-        padding: 40px;
-        border: 2px solid orange;
-      }
-      .head {
-        color: blue;
-      }
-      .bg {
-        background-color: palevioletred;
-      }
-      .underline {
-        text-decoration: underline;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
-    <p id="text" class="highlight bold">Hello</p>
+    <!-- //parentnode -->
+    <p id="child">Hello</p>
 
-    <h1 id="text2" class="head">Hello</h1>
-    <h3 id="h3">text content</h3>
+    <!-- child node -->
+    <ul id="list">
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
+    <!-- first element last element ,sibling examples-->
+    <div id="book">
+      Title
+      <p id="first">paragraph-1</p>
+      mid
+      <p id="last">paragraph-2</p>
+      end
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
