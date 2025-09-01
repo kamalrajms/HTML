@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- ## inline event handlers -->
-    <button id="alert" onclick="alert('Hello')">click me</button>
+    <label> Choose Numbes</label>
 
-    <!-- addEventListerner removeEventlisterner-->
+    <select id="number">
+      <option value="">Select option</option>
+      <option value="one">one</option>
+      <option value="two">two</option>
+      <option value="other">other</option>
+    </select>
 
-    <button id="btn">button</button>
-    <!-- mouse -->
-    <div id="mouse">text</div>
-    <input type="text" id="input" />
-
-    <form onsubmit="" id="form">
-      <input type="text" placeholder="name" />
-      <input type="text" placeholder="password" />
-      <button >submit</button>
-    </form>
-
-    <script src="./script.js"></script>
+    <div id="otherfield" style="display: none">
+      <input type="text" placeholder="pleas specify" />
+    </div>
   </body>
+
+  <!-- <script>
+    console.log("Hello");
+  </script> -->
+  <script src="./script.js"></script>
 </html>
