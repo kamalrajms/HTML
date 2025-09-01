@@ -1,29 +1,64 @@
-// parent node
-const child = document.getElementById("child");
-console.log(child.parentNode);
-console.log(child.parentElement);
-console.log(document.parentElement);
+// <!-- addEventListerner removeEventlisterner-->
+const btn = document.getElementById("btn");
+const al = document.getElementById("alert");
 
-//child node
-const list = document.getElementById("list");
-console.log(list.childNodes);
-console.log(list.children);
+function sayhello() {
+  console.log("Hello every one");
+  btn.style.color = "red";
+  al.textContent = "click button";
+}
+btn.addEventListener("dblclick", sayhello);
 
-//first child
-const book = document.getElementById("book");
-console.log(book.firstChild);
-console.log(book.firstElementChild);
+setTimeout(() => {
+  //   al.style.display = "none";
+  btn.removeEventListener("click", sayhello);
+}, 5000);
 
-//last child
-console.log(book.lastChild);
-console.log(book.lastElementChild);
+//mouse
 
-//sibling node
-//next
-const first = document.getElementById("first");
-const last = document.getElementById("last");
-console.log(first.nextSibling);
-console.log(first.nextElementSibling);
-//previous
-console.log(last.previousSibling);
-console.log(last.previousElementSibling);
+let mouse = document.getElementById("mouse");
+mouse.addEventListener("mouseover", () => {
+  console.log("mouse overed");
+});
+
+mouse.addEventListener("mouseout", () => {
+  console.log("mouse out");
+});
+
+mouse.addEventListener("mousedown", () => {
+  console.log("mouse down");
+});
+
+mouse.addEventListener("mouseup", () => {
+  console.log("mouse up");
+});
+
+//keyboard
+let input = document.getElementById("input");
+input.addEventListener("keydown", () => {
+  console.log("key down");
+});
+
+input.addEventListener("keyup", () => {
+  console.log("key up");
+});
+
+input.addEventListener("keypress", () => {
+  console.log("key press");
+});
+
+//windows event
+
+window.addEventListener("load", () => {
+  console.log("reload");
+});
+
+window.addEventListener("resize", () => {
+  console.log("resize");
+});
+
+console.log(eval(342 - 5 / 2));
+
+
+//form submit
+

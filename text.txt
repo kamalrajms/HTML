@@ -384,3 +384,32 @@ single line styleing in css
 ##event handlers
 
     ## inline event handlers
+
+    ## addEventListerner  ,removeEventListrner
+
+        variableName.addEventListerner("eventType","callback",usecapture)
+
+        variableName.removeEventListrner("eventType","callback")
+
+    ## event types
+            mouse
+                click
+                dbclick
+                mouse over/mouse out--mouse enter/mouse leaves
+                mouse down/mouse up-- mouse key pressed/key released
+            keyboard
+                keydown--key predded
+                keyup--key released
+                key pressed--on key pressed
+            form event
+                submit-form submit
+                changes--input value changes
+                input--fires on even key stoke
+                focus--element on focus
+                blur-- element loss of focus
+            windows
+                load--when page reload
+                resize-- when minimize or maxmize size of windows
+                scroll--- when web page scrolls
+
+

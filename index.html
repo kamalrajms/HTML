@@ -4,25 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
-    <style></style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- //parentnode -->
-    <p id="child">Hello</p>
+    <!-- ## inline event handlers -->
+    <button id="alert" onclick="alert('Hello')">click me</button>
 
-    <!-- child node -->
-    <ul id="list">
-      <li>item 1</li>
-      <li>item 2</li>
-    </ul>
-    <!-- first element last element ,sibling examples-->
-    <div id="book">
-      Title
-      <p id="first">paragraph-1</p>
-      mid
-      <p id="last">paragraph-2</p>
-      end
-    </div>
+    <!-- addEventListerner removeEventlisterner-->
+
+    <button id="btn">button</button>
+    <!-- mouse -->
+    <div id="mouse">text</div>
+    <input type="text" id="input" />
+
+    <form onsubmit="" id="form">
+      <input type="text" placeholder="name" />
+      <input type="text" placeholder="password" />
+      <button >submit</button>
+    </form>
 
     <script src="./script.js"></script>
   </body>
