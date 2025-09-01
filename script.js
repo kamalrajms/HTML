@@ -1,11 +1,21 @@
-//Dunamically updating form fields
-const number = document.getElementById("number");
-const otherfield = document.getElementById("otherfield");
+//   required field with condition
 
-number.addEventListener("change", () => {
-  if (number.value === "other") {
-    otherfield.style.display = "block";
+const form = document.getElementById("signupform");
+const error = document.getElementById("error");
+
+form.addEventListener("submit", (e) => {
+  // e.preventDefault();
+  const email = document.getElementById("email").value;
+  const age = document.getElementById("age").value;
+
+  if (email === "" || age === "") {
+    error.textContent = "All field required";
+  } else if (!email.includes("@")) {
+    error.textContent = "enter valid mail";
+  } else if (age < 18) {
+    error.textContent = "you are not enegible";
   } else {
-    otherfield.style.display = "none";
+    error.textContent = "";
+    alert("form submitted");
   }
 });
